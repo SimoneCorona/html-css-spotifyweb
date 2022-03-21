@@ -6,3 +6,57 @@
 }
 
 /* COMMON */
+html{
+    font-family: "Monserrat", sans-serif;
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+/* HEADER */
+header{
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header img{
+    width: 12%;
+    margin-left: 1em;
+}
+header a{
+    border: 2px white solid;
+    padding: 0.8em 1.8em;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+/* NAV */
+nav{
+    height: calc(100% - 80px);
+    width: 20%;
+    padding-top: 100px;
+    background-color: black;
+}
+
+
+ /* MAIN */
+ main{
+     height: calc(100% - 80px);
+     width: 100%;
+ }
+
+
+/* FOOTER */
+footer{
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    /* background-color: rgb(71, 80, 88); */
+}
