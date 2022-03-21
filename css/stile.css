@@ -114,17 +114,19 @@ nav a{
 .main-content{
     width: calc(100% - 200px);
 }
+/* NAV-MAIN */
 .nav-main{
-    padding-top: 1em; 
+    padding-top: 1em;
+    text-align: center; 
 }
 .nav-main ul li{
     display: inline-block;
-    margin: 0 auto;
 }
 .nav-main a{
     color: grey;
     padding-right: 1em;
 }
+
 
 /* FOOTER */
 footer{
