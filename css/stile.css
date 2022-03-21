@@ -16,70 +16,123 @@ a{
 li{
     list-style: none;
 }
+.clearfix{
+    content: "";
+    display: table;
+    clear: both;
+}
+.float{
+    float: left;
+}
 /* HEADER */
 header{
     height: 100px;
     width: 100%;
     position: fixed;
-    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.9);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 header img{
-    width: 12%;
+    width: 150px;
     margin-left: 1em;
 }
 header a{
+    color: white;
     border: 2px white solid;
     padding: 0.8em 1.8em;
     border-radius: 50px;
     margin-right: 10px;
 }
 
+/* MAIN */
+main{
+    height: calc(100vh - 80px);
+    width: 100%;
+    padding-top: 100px;
+    background-color: #141922;
+}
+
 /* NAV */
 nav{
-    height: calc(100% - 80px);
-    width: 20%;
-    padding-top: 100px;
+    height: 100%;
+    width: 200px;
     color: gray;
     background-color: black;
+    overflow: hidden;
 }
 nav ul{
     margin: 0 1em;
+    line-height: 2em;
 }
 nav img{
     width: 20px;
+    height: 20px;
+    margin-right: 0.5em;
 }
 nav a{
   color: inherit;  
 }
-.arrow{
-    display: inline-block;
-    height: 18px;
-    width: 18px;
+.top-nav li a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.playlist h2{
     color: white;
-    border: 1px solid white;
-    border-radius: 50%;
-    padding:
+    font-size: 1em;
+    margin-top: 1em;
+}
+.playlist h3{
+    display: inline-block;
+    font-size: 1em;
+}
+.bottom-nav{
+    width: 80%;
+    margin-top: 25%;
+}
+.bottom-nav li a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 .divider{
     border-top: 2px solid gray;
+    width: 100%;
+    margin: 0.5em 0;
 }
 .profile{
     background-color: grey;
+    border-radius: 50%;
 }
- /* MAIN */
- main{
-     height: calc(100% - 80px);
-     width: 100%;
- }
-
+.bottom-nav li:last-child{
+    color: white;
+}
+/* MAIN-CONTENT */
+.main-content{
+    width: calc(100% - 200px);
+}
+.nav-main{
+    padding-top: 1em; 
+}
+.nav-main ul li{
+    display: inline-block;
+    margin: 0 auto;
+}
+.nav-main a{
+    color: grey;
+    padding-right: 1em;
+}
 
 /* FOOTER */
 footer{
     height: 80px;
     width: 100%;
     position: fixed;
-    /* background-color: rgb(71, 80, 88); */
+    background-color: rgb(40, 40, 40);
+}
+.foot-left{
+    width: 20%;
 }
