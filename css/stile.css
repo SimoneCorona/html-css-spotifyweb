@@ -42,10 +42,33 @@ nav{
     height: calc(100% - 80px);
     width: 20%;
     padding-top: 100px;
+    color: gray;
     background-color: black;
 }
-
-
+nav ul{
+    margin: 0 1em;
+}
+nav img{
+    width: 20px;
+}
+nav a{
+  color: inherit;  
+}
+.arrow{
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding:
+}
+.divider{
+    border-top: 2px solid gray;
+}
+.profile{
+    background-color: grey;
+}
  /* MAIN */
  main{
      height: calc(100% - 80px);
