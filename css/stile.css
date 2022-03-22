@@ -183,6 +183,9 @@ nav a{
 .artisti-popolari{
     width: 100%;
 }
+.artisti-popolari img{
+    border-radius: 50%;
+}
 /* FOOTER */
 footer{
     height: 80px;
