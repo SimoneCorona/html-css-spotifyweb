@@ -86,7 +86,7 @@ nav a{
     display: inline-block;
     font-size: 1em;
 }
-.playlist ul{
+.playlist ul li{
     height: 70%;
     overflow-y: auto;
 }
@@ -114,6 +114,7 @@ nav a{
 .main-content{
     width: calc(100% - 200px);
     height: 100%;
+    overflow-y: scroll;
 }
 .logo-main{
     height: 100px;
@@ -128,7 +129,6 @@ nav a{
     border-radius: 50px;
     line-height: 100px;
 }
-
 /* NAV-MAIN */
 .nav-main{
     padding: 25px 0;
@@ -141,8 +141,25 @@ nav a{
     color: grey;
     padding-right: 1em;
 }
-
-
+/* RECENTLY PLAYED */
+.played{
+    padding: 0 1em;
+}
+.played h1{
+    margin-bottom: 1em;
+}
+.album{
+    width: 15%;
+    text-align: center;
+    margin-right: 1.5%;
+}
+.album img{
+    display: block;
+    width: 100%;
+}
+.album h3{
+    padding: 0.5em 0;
+}
 /* FOOTER */
 footer{
     height: 80px;
