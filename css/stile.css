@@ -25,33 +25,18 @@ li{
     float: left;
 }
 /* HEADER */
-header{
+.header-main{
     height: 100px;
-    width: 100%;
-    position: fixed;
-    z-index: 100;
+    width: calc(100% - 200px);
     background-color: rgba(0, 0, 0, 0.9);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-header img{
-    width: 150px;
-    margin-left: 1em;
-}
-header a{
-    color: white;
-    border: 2px white solid;
-    padding: 0.8em 1.8em;
-    border-radius: 50px;
-    margin-right: 10px;
-}
-
 /* MAIN */
 main{
     height: calc(100vh - 80px);
     width: 100%;
-    padding-top: 100px;
     background-color: #141922;
 }
 
@@ -59,12 +44,17 @@ main{
 nav{
     height: 100%;
     width: 200px;
+    padding: 0 1em;
+    position: relative;
     color: gray;
     background-color: black;
     overflow: hidden;
 }
+.logo{
+    width: 150px;
+    height: 100px;
+}
 nav ul{
-    margin: 0 1em;
     line-height: 2em;
 }
 nav img{
@@ -80,6 +70,7 @@ nav a{
     flex-direction: row;
     align-items: center;
 }
+
 .playlist h2{
     color: white;
     font-size: 1em;
@@ -90,8 +81,7 @@ nav a{
     font-size: 1em;
 }
 .bottom-nav{
-    width: 80%;
-    margin-top: 25%;
+    height: 80px;
 }
 .bottom-nav li a{
     display: flex;
@@ -113,10 +103,24 @@ nav a{
 /* MAIN-CONTENT */
 .main-content{
     width: calc(100% - 200px);
+    height: 100%;
 }
+.logo-main{
+    height: 100px;
+    text-align: end;
+    padding-right: 1em;
+}
+.accesso{
+    color: white;
+    border: 2px white solid;
+    padding: 0.8em 1.8em;
+    border-radius: 50px;
+    line-height: 100px;
+}
+
 /* NAV-MAIN */
 .nav-main{
-    padding-top: 1em;
+    padding-top: 10px;
     text-align: center; 
 }
 .nav-main ul li{
@@ -133,6 +137,7 @@ footer{
     height: 80px;
     width: 100%;
     position: fixed;
+    z-index: 100;
     background-color: rgb(40, 40, 40);
 }
 .foot-left{
