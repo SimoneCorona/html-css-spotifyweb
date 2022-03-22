@@ -144,9 +144,11 @@ nav a{
 /* RECENTLY PLAYED */
 .played{
     padding: 0 1em;
+    margin-bottom: 1.5em;
 }
 .played h1{
-    margin-bottom: 1em;
+    font-size: 1.5em;
+    margin-bottom: 0.8em;
 }
 .album{
     width: 15%;
@@ -158,7 +160,28 @@ nav a{
     width: 100%;
 }
 .album h3{
+    font-size: 0.8em;
     padding: 0.5em 0;
+}
+.album p{
+    font-size: 0.8em;
+    color: grey;
+}
+/* CREATO PER */
+.creato-per{
+    width: 100%;
+    padding: 0 1em;
+    margin-bottom: 1.5em;
+}
+.creato-per p{
+    margin: 0.8em 0;
+    color: grey;
+}
+
+/* ARTISTI POPOLARI */
+
+.artisti-popolari{
+    width: 100%;
 }
 /* FOOTER */
 footer{
