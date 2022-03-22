@@ -38,6 +38,7 @@ main{
     height: calc(100vh - 80px);
     width: 100%;
     background-color: #141922;
+    overflow: hidden;
 }
 
 /* NAV */
@@ -47,8 +48,11 @@ nav{
     padding: 0 1em;
     position: relative;
     color: gray;
-    background-color: black;
-    overflow: hidden;
+    background-color: black;  
+}
+.top-sidebar{
+    height: calc(100% - 85px);
+    min-height: 350px;
 }
 .logo{
     width: 150px;
@@ -70,7 +74,9 @@ nav a{
     flex-direction: row;
     align-items: center;
 }
-
+.playlist{
+    overflow: hidden;
+}
 .playlist h2{
     color: white;
     font-size: 1em;
@@ -79,6 +85,10 @@ nav a{
 .playlist h3{
     display: inline-block;
     font-size: 1em;
+}
+.playlist ul{
+    height: 70%;
+    overflow-y: auto;
 }
 .bottom-nav{
     height: 80px;
@@ -107,6 +117,7 @@ nav a{
 }
 .logo-main{
     height: 100px;
+    background-color: #080B12;
     text-align: end;
     padding-right: 1em;
 }
@@ -120,7 +131,7 @@ nav a{
 
 /* NAV-MAIN */
 .nav-main{
-    padding-top: 10px;
+    padding: 25px 0;
     text-align: center; 
 }
 .nav-main ul li{
