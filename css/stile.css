@@ -16,7 +16,7 @@ a{
 li{
     list-style: none;
 }
-.clearfix{
+.clearfix::after{
     content: "";
     display: table;
     clear: both;
@@ -169,6 +169,7 @@ nav a{
 }
 /* CREATO PER */
 .creato-per{
+    display: inline-block;
     width: 100%;
     padding: 0 1em;
     margin-bottom: 1.5em;
@@ -181,10 +182,16 @@ nav a{
 /* ARTISTI POPOLARI */
 
 .artisti-popolari{
+    display: inline-block;
     width: 100%;
+    padding: 0 1em;
 }
 .artisti-popolari img{
     border-radius: 50%;
+}
+.artisti-popolari p{
+    margin: 0.8em 0;
+    color: grey;
 }
 /* FOOTER */
 footer{
@@ -193,7 +200,60 @@ footer{
     position: fixed;
     z-index: 100;
     background-color: rgb(40, 40, 40);
+    display: flex;
 }
+/* FOOTER-LEFT */
 .foot-left{
-    width: 20%;
+    height: 70%;
+    width: 250px;
+    display: flex;
+    align-self: center;
+    align-items: center;
+}
+.foot-left img{
+    height: 100%;
+    padding: 0 1em;
+}
+.foot-left h3{
+    font-size: 0.8em;
+}    
+.foot-left span{
+    font-size: 0.8em;
+    color: grey;
+}
+.foot-left a{
+    color: grey;
+}
+.fa-heart{
+    margin-left: 25px;
+    margin-right: 10px;
+}
+
+/* FOOTER-CENTER */
+.foot-center{
+    height: 100%;
+    flex-grow: 1;
+}
+.icons-track{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons-track i{
+    margin: 0 2%;
+}
+.fa-play-circle{
+    font-size: 1.5em;
+}
+.foot-center span{
+    font-size: 0.8em;
+}
+/* FOOTER-RIGHT */
+.foot-right{
+    height: 100%;
+    width: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
