@@ -24,12 +24,6 @@ li{
 .float{
     float: left;
 }
-.bar{
-    height: 4px;
-    border-radius: 50px;
-    background-color: grey;
-    border-color: grey;
-}
 /* HEADER */
 .header-main{
     height: 100px;
@@ -56,6 +50,7 @@ nav{
     color: gray;
     background-color: black;  
 }
+/* TOP-SIDEBAR */
 .top-sidebar{
     height: calc(100% - 85px);
     min-height: 350px;
@@ -80,6 +75,9 @@ nav a{
     flex-direction: row;
     align-items: center;
 }
+.top-nav li a:hover{
+    color: white;
+}
 .playlist{
     overflow: hidden;
 }
@@ -96,6 +94,10 @@ nav a{
     height: 70%;
     overflow-y: auto;
 }
+.playlist ul li:hover{
+    color: white;
+}
+/* BOTTOM-NAV */
 .bottom-nav{
     height: 80px;
 }
@@ -116,6 +118,7 @@ nav a{
 .bottom-nav li:last-child{
     color: white;
 }
+
 /* MAIN-CONTENT */
 .main-content{
     width: calc(100% - 200px);
@@ -135,9 +138,13 @@ nav a{
     border-radius: 50px;
     line-height: 100px;
 }
+.accesso:hover{
+    font-size: 1.1em;
+}
+
 /* NAV-MAIN */
 .nav-main{
-    padding: 25px 0;
+    margin: 25px 0;
     text-align: center; 
 }
 .nav-main ul li{
@@ -147,7 +154,9 @@ nav a{
     color: grey;
     padding-right: 1em;
 }
-
+.nav-main a:hover{
+    color: white;
+}
 
 /* RECENTLY PLAYED */
 .played{
@@ -188,7 +197,6 @@ nav a{
 }
 
 /* ARTISTI POPOLARI */
-
 .artisti-popolari{
     display: inline-block;
     width: 100%;
@@ -236,7 +244,9 @@ footer{
     margin-left: 25px;
     margin-right: 10px;
 }
-
+.foot-left a:hover{
+    color: rgb(255, 255, 255);
+}
 /* FOOTER-CENTER */
 .foot-center{
     height: 100%;
@@ -255,6 +265,9 @@ footer{
 .fa-play-circle{
     font-size: 1.5em;
 }
+.fa-play-circle:hover{
+    font-size: 1.8em;
+}
 .foot-center span{
     font-size: 0.8em;
     padding: 0 20px;
@@ -265,8 +278,39 @@ footer{
     justify-content: center;
     padding-top: 5px;
 }
+.bar{
+    position: relative;
+    height: 4px;
+    border-radius: 50px;
+    background-color: grey;
+    border-color: grey;
+}
+.bar:hover .bar-circle{
+    display: block;
+}
+.perc{
+    height: 4px;
+    width: 24%;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+}
+.bar:hover .perc{
+    background-color: lightgreen;
+}
 .track{
     width: 60%;
+}
+.bar-circle{
+    display: none;
+    position: absolute;
+    top: -3px;
+    left: 22%;
+    height: 12px;
+    width: 12px;
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 50%;
 }
 /* FOOTER-RIGHT */
 .foot-right{
