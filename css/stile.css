@@ -24,6 +24,12 @@ li{
 .float{
     float: left;
 }
+.bar{
+    height: 4px;
+    border-radius: 50px;
+    background-color: grey;
+    border-color: grey;
+}
 /* HEADER */
 .header-main{
     height: 100px;
@@ -141,6 +147,8 @@ nav a{
     color: grey;
     padding-right: 1em;
 }
+
+
 /* RECENTLY PLAYED */
 .played{
     padding: 0 1em;
@@ -239,6 +247,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 5px;
 }
 .icons-track i{
     margin: 0 2%;
@@ -248,6 +257,16 @@ footer{
 }
 .foot-center span{
     font-size: 0.8em;
+    padding: 0 20px;
+}
+.minutes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+}
+.track{
+    width: 60%;
 }
 /* FOOTER-RIGHT */
 .foot-right{
@@ -256,4 +275,7 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+.volume{
+    width: 50%;
 }
