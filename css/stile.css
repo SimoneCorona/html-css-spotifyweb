@@ -16,7 +16,7 @@ a{
 li{
     list-style: none;
 }
-.clearfix::after{
+.clearfix{
     content: "";
     display: table;
     clear: both;
@@ -87,7 +87,17 @@ nav a{
 .playlist h2{
     color: white;
     font-size: 1em;
-    margin-top: 1em;
+    margin: 1em 0;
+}
+.create-playlist{
+    display: flex;
+    align-items: center;
+}
+.plus{
+    color: #080B12;
+    background-color: grey;
+    padding: 3px 8px;
+    margin-right: 5%;
 }
 .playlist h3{
     display: inline-block;
@@ -106,7 +116,6 @@ nav a{
 }
 .bottom-nav li a{
     display: flex;
-    flex-direction: row;
     align-items: center;
 }
 .divider{
@@ -170,10 +179,24 @@ nav a{
     font-size: 1.5em;
     margin-bottom: 0.8em;
 }
+.row{
+    width: 100%;
+}
 .album{
-    width: 15%;
+    width: calc(100%/6 - 20px);
     text-align: center;
-    margin-right: 1.5%;
+    margin: 0 10px;
+}
+.album div{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.album i{
+    position: absolute;
+    font-size: 2em;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 .album img{
     display: block;
@@ -205,6 +228,7 @@ nav a{
     display: inline-block;
     width: 100%;
     padding: 0 1em;
+    margin-bottom: 2em;
 }
 .artisti-popolari img{
     border-radius: 50%;
@@ -359,6 +383,15 @@ footer{
     }
     .divider{
         display: none;
+    }
+}
+/* media query xs main */
+@media screen and (max-width: 600px){
+    .main-content{
+        width: calc(100% - 50px);
+    }
+    .album{
+        width: calc(100%/4 - 20px);
     }
 }
 /* media query xs footer */
